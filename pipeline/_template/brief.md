@@ -21,11 +21,11 @@ The actual direction, in the order it will be executed.
 
 ## Must include
 
-Non-negotiables: claims that must appear, legal or compliance requirements, brand marks, the offer as stated.
+Non-negotiables: claims that must appear worded as `brand/claims.md` approves them, required disclosures, brand marks, the offer as stated.
 
 ## Must not include
 
-From the brand's claims list, plus anything specific to this concept.
+From the cannot-say and swaps tables in `brand/claims.md`, plus anything specific to this concept.
 
 ## Source material
 

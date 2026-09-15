@@ -19,7 +19,7 @@ Before fetching anything, answer three questions from the product page:
 2. **What type of thing is it?** This decides which dimensions you document. Broad types: something consumed (food, drink, supplement, personal care, cosmetics), something worn (apparel, footwear, accessories, textiles), a hard good (device, tool, furniture, equipment, packaged object), software or a service (plans, subscriptions, memberships, courses), or a hybrid (a device with a subscription, a kit with consumables). Many products are more than one type — document every type that applies.
 3. **Is it one product or several?** One product page = one file, even when it has many variants. Separate product pages = separate files, even when the products are close siblings. Bundles get their own file that lists what's in them and links to each component's file. When the brand sells the same thing under one page with variants that differ in composition (not just size or color), note that in the variants section rather than splitting the file.
 
-File name: the product's name, lowercased, hyphenated, saved to the `product/` folder of whichever brand it belongs to (`1. research/product/` for the brand itself, `1. research/competitors/<slug>/product/` for a competitor).
+File name: the product's name, lowercased, hyphenated, saved to `brand/products/` for the brand itself, or the `product/` folder of whichever competitor it belongs to (`brand/products/` for the brand itself, `1. research/competitors/<slug>/product/` for a competitor).
 
 ## Step 2: Choose the dimensions
 
@@ -106,6 +106,6 @@ Structure the document top to bottom:
 - No empty sections and no placeholder text.
 - Variants are complete — if the page shows a size or color selector, every option is listed.
 - The gaps section names what's missing rather than leaving the reader to notice.
-- The file name matches the product name and it is in the correct brand's `product/` folder.
+- The file name matches the product name and it is in `brand/products/` for our brand, or the right competitor's `product/` folder.
 
 When the product has an unusually large variant set or a very long ingredient or feature list, completeness still wins over brevity — the strategist needs the whole thing once, here, rather than going back to the site.

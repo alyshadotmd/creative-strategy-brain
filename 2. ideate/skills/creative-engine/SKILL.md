@@ -48,7 +48,7 @@ One really intentional ad. Or hundreds of ads that cover a full funnel, mapped s
 
 Everything starts from two inputs, both produced by research and pulled from `1. research/`:
 
-- **The product:** the facts-only catalog in `1. research/product/`. What it is, does, contains, costs, includes; its variations; the can-say list. If a claim isn't in the catalog, an ad can't make it.
+- **The product:** the facts-only catalog in `brand/products/`. What it is, does, contains, costs, includes; its variations. What may be said about it is in `brand/claims.md` — if a claim isn't permitted there, an ad can't make it.
 - **The customer:** tagged VOC from `1. research/customer/` (reviews, ad comments), with source noted on every quote so you know which awareness stages a quote can honestly feed. Plus brand context, competitor research from `1. research/competitors/`, and customer psychology as depth demands.
 
 The engine consumes research; it never redoes it.

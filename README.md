@@ -14,17 +14,18 @@ Each numbered folder represents one stage of the creative strategy flywheel. Sav
 
 | Folder | What goes here |
 |---|---|
-| `1. research` | Anything about customer research or product research. `brand/` holds the brand's own overview, `product/` one facts-only profile per product, `customer/reviews/` and `customer/ad comments/` the voice of customer, `customer/personas/` the personas the engine reads, `competitors/<brand>/` one folder per competitor with the same `brand/`, `product/`, `customer/` shape, plus `creators/`. |
+| `1. research` | What was discovered about the market — never what the brand asserts about itself, which lives in `brand/`. `customer/reviews/` and `customer/ad comments/` hold the voice of customer, `customer/personas/` the personas the engine reads, `competitors/<slug>/` one folder per competitor with a `brand/`, `product/`, `customer/` shape, plus `creators/`. |
 | `2. ideate` | Anything about generating new ad ideas and turning them into briefs. The creative strategy engine lives here with the libraries it draws on — `visual-formats/`, `messaging-angles/`, `hooks/` (each has a README saying what goes in it) — plus the concept log `ad-concepts.md`, which indexes every concept folder in `pipeline/`. |
 | `3. create` | The method for producing, checking and shipping creative — not the creative itself. Script-writing, briefing, QA and naming skills, plus the reference material they read: `voice/`, brief templates, QA standards, compliance/claims checks, naming conventions, handoff checklists. The ads themselves live in `pipeline/`. |
-| `4. analyze` | Anything about post-launch performance analysis. Reporting frameworks, teardown protocols, creative analysis skills, what-worked/what-didn't learnings. |
+| `4. analyze` | Post-launch performance analysis. The `creative-analysis` skill, reporting frameworks, and what-worked/what-didn't learnings across ads. `teardowns/<ad-name>.md` holds one teardown per launched ad — keyed to the ad name rather than the concept, because one concept can ship many ads. |
 
 ## Support folders (not numbered)
 
 | Folder | What goes here |
 |---|---|
 | `pipeline` | One folder per ad moving through the workflow — its overview, script, brief, QA and launched name. Documents only; all media lives in `assets/`. See `pipeline/README.md`. |
-| `assets` | All media, flat (one brand). `fonts/`, `logos/`, `images/product/`, `images/lifestyle/`, `images/illustrations/`, `footage/<shoot-or-creator>/` for raw clips, `ads/<ad-name>/` for finished cuts, and the brand kit at `assets/brand-kit-<brand>.md`. Raw footage and finished ads get repurposed across concepts, so they live here rather than inside any one of them. Filled by the `brand-kit` skill; read by `app-generation`. |
+| `brand` | Everything the brand asserts about itself: `brand-overview.md`, `brand-kit.md`, `claims.md`, and `products/<product>.md` one per product. Asserted facts, as opposed to the discovered ones in `1. research/`. Documents only — the media the kit names lives in `assets/`. See `brand/README.md`. |
+| `assets` | All media, flat (one brand). `fonts/`, `logos/`, `images/product/`, `images/lifestyle/`, `images/illustrations/`, `footage/<shoot-or-creator>/` for raw clips, `ads/<ad-name>/` for finished cuts. Raw footage and finished ads get repurposed across concepts, so they live here rather than inside any one of them. Filled by the `brand-kit` skill; read by `app-generation`. |
 | `team` | One folder per person on the team. Each person stores context they need that is not relevant to the rest of the team. Example: `team/<name>/...` |
 | `integrations` | One folder per integration. Store context that helps the assistant navigate that specific integration (what its data means here, where to find what, how to read it). Example: `integrations/<app>/index.md` |
 | `strategy` | Business context: what matters to the business, current business objectives, and priorities right now. |

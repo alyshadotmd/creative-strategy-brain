@@ -20,12 +20,12 @@ Copy `_template/` to start one. Create only the files that concept actually need
 | `references.md` | any | Inspiration, the ads that sparked it, and paths into `assets/` for any media this concept uses. |
 | `script.md` | create | The spoken lines and the beats. Video only. |
 | `brief.md` | create | Instructions to whoever produces the final asset — editor or designer. |
-| `qa.md` | create | The pre-launch review, written against `script.md`, `brief.md`, and the brand's claims list. |
+| `qa.md` | create | The pre-launch review, written against `script.md`, `brief.md`, and `brand/claims.md`. |
 | `ad-name.md` | create | The launched name, or names if the concept shipped in variants. |
 
 ## Two QAs, two places
 
-`qa.md` here is **pre-launch**, and it asks whether the delivery matches what was asked for — did they shoot the script, does it clear the claims list, is it on brand. It gates the launch.
+`qa.md` here is **pre-launch**, and it asks whether the delivery matches what was asked for — did they shoot the script, does it clear `brand/claims.md`, is it on brand. It gates the launch.
 
 The **post-launch** teardown asks why the ad performed the way it did, references the live ad and its performance data, and is read against other ads rather than on its own. That belongs in `4. analyze`, filed under the ad name. `overview.md` carries the status and points at it.
 

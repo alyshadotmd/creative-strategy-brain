@@ -20,11 +20,11 @@ This skill contains no brand-specific content. Every label, segment, and line co
 
 | Input | Where it lives | If missing |
 |---|---|---|
-| Brand name and products | `1. research/brand/brand-overview.md`, `1. research/product/` | Run `brand-overview` / `product-info` |
+| Brand name and products | `brand/brand-overview.md`, `brand/products/` | Run `brand-overview` / `product-info` |
 | The brand's own reviews | `1. research/customer/reviews/` | Fall back to competitors (Step 1) |
 | Competitor reviews | `1. research/competitors/<slug>/customer/` | Run `brain-setup` Step 5 |
 | Review audits, if any | `1. research/customer/` and competitor folders — output of `review-audit` | Mine the reviews yourself (Step 3) |
-| Brand look and feel | `assets/brand-kit-<brand>.md` and the `assets/` folders | Run `brand-kit` — do not invent a palette |
+| Brand look and feel | `brand/brand-kit.md` and the `assets/` folders | Run `brand-kit` — do not invent a palette |
 | Claims guardrails | Brand kit (04 — Voice, compliance swaps) and any claims doc | Ask; default to flagging every outcome claim |
 | App build method | `skills/app-generation/SKILL.md` | Required — this skill does not define its own design |
 
@@ -140,7 +140,7 @@ Every generated file opens with one line: generated from `matrix.json` on [date]
 
 When the app has product tabs, the markdown mirrors it: a section per product inside each file, plus the family view.
 
-Finally, note the app's location and the matrix folder in `1. research/brand/brand-overview.md`.
+Finally, note the app's location and the matrix folder in `brand/brand-overview.md`.
 
 ---
 

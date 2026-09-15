@@ -36,9 +36,10 @@ While you wait for the answers, start Step 0 and Step 1 — they need only the U
 Confirm the brain matches the map below. Create anything missing. Do not create extra top-level folders.
 
 ```
+brand/
+  brand-overview.md · brand-kit.md · claims.md
+  products/<product-name>.md  one facts-only profile per product
 1. research/
-  brand/                      brand-overview.md for the brand itself
-  product/                    one <product-name>.md per product
   customer/
     reviews/                  one <product-name>-reviews.csv per product (+ raw export)
     ad comments/              exported ad comments, if any
@@ -48,7 +49,9 @@ Confirm the brain matches the map below. Create anything missing. Do not create 
       product/                one <product-name>.md per product you pulled reviews for
       customer/               one <product-name>-reviews.csv per product (+ raw export)
   creators/ · skills/
-2. ideate/  ·  3. create/  ·  4. analyze/
+2. ideate/  ·  3. create/
+4. analyze/
+  teardowns/<ad-name>.md      one per launched ad
 pipeline/
   README.md · roadmap.md
   _template/                  copy to open a concept
@@ -57,7 +60,6 @@ assets/
   fonts/ · logos/ · images/product/ · images/lifestyle/ · images/illustrations/
   footage/<shoot-or-creator>/ raw clips, reusable across concepts
   ads/<ad-name>/              finished cuts, reusable as source
-  brand-kit-<brand>.md
 skills/ · integrations/ · strategy/ · team/
 ```
 
@@ -65,7 +67,7 @@ Read `README.md` at the brain root if anything is unclear about where something 
 
 ## Step 1: Build the brand kit and harvest assets
 
-Run the `brand-kit` skill (`skills/brand-kit/SKILL.md`) with the URL and any assets the person provided. It writes `assets/brand-kit-<brand>.md` and fills the `assets/` folders with every font, logo, product image, lifestyle image, and illustration that meets its quality bar.
+Run the `brand-kit` skill (`skills/brand-kit/SKILL.md`) with the URL and any assets the person provided. It writes `brand/brand-kit.md` and fills the `assets/` folders with every font, logo, product image, lifestyle image, and illustration that meets its quality bar.
 
 Do not move on until the kit file exists. Note which asset categories it reported as complete and which have gaps — that feeds Step 2 and the final report.
 
@@ -75,10 +77,10 @@ Do not move on until the kit file exists. Note which asset categories it reporte
 
 ## Step 3: Document the brand's own products and brand
 
-**Brand overview → `1. research/brand/brand-overview.md`**
+**Brand overview → `brand/brand-overview.md`**
 Run the `brand-overview` skill (`1. research/skills/brand-overview/SKILL.md`) in its own-brand mode. It pulls from the site, the brand kit, and anything the person said.
 
-**Product profiles → `1. research/product/<product-name>.md`, one per product**
+**Product profiles → `brand/products/<product-name>.md`, one per product**
 Run the `product-info` skill (`1. research/skills/product-info/SKILL.md`) for each product. It decides which dimensions to document from the product type and writes facts only — what the product is, contains, is made of, comes in, costs, and how it's used, as the brand states it. If the catalog is large, do the products the person prioritized first and list the rest as not yet profiled.
 
 File names are the product's name, lowercased, hyphenated. If the brand has one product, there is one file.

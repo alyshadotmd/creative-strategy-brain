@@ -1,6 +1,6 @@
 # QA — pre-launch
 
-Reviewed against `script.md`, `brief.md`, and the brand's claims list. This gates the launch; the post-launch teardown lives in `4. analyze`.
+Reviewed against `script.md`, `brief.md`, and `brand/claims.md`. This gates the launch; the post-launch teardown lives in `4. analyze`.
 
 **Reviewed:** <date> · **Delivery:** path in `assets/`
 
@@ -10,7 +10,7 @@ Against the brief, point by point. Where the delivery departs from it, say wheth
 
 ## Claims
 
-Every claim made in the delivery, checked against what the brand can say. Anything not on the permitted list is blocking.
+Every claim made in the delivery, checked against the can-say table in `brand/claims.md`. Anything not on that list is blocking, and an approved idea worded differently is not an approved claim.
 
 ## Brand
 

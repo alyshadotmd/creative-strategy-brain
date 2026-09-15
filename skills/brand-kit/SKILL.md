@@ -1,6 +1,6 @@
 ---
 name: brand-kit
-description: Builds a structured brand & asset kit document (logo, color, type, voice, imagery, photography, usage rules, asset inventory) for any brand — from a client's existing brand page, a folder of uploaded assets, a website scrape, or a short interview. Use this whenever the user says "build a brand kit", "document their brand", "pull their brand guidelines", "turn this brand page into a kit", "what are their colors/fonts", or uploads logos, fonts, or a brand book and wants it organized. Also trigger when a static ad, landing page, or design brief needs visual identity rules and no brand kit exists yet for that brand. This is the visual + verbal identity layer. It complements brand-overview and the research folder (strategy layer) — run both before design or copy execution. Minimum input is a website URL; a brand PDF, logo pack, font files, or product shots given at the same time make it better. Output is always two things: the kit saved at `assets/brand-kit-[brand].md`, and every brand asset that meets the quality bar (fonts, logos, product images, lifestyle images, illustrations) downloaded into the brain's `assets/` folders so `app-generation` and every design task can use them without asking.
+description: Builds a structured brand & asset kit document (logo, color, type, voice, imagery, photography, usage rules, asset inventory) for any brand — from a client's existing brand page, a folder of uploaded assets, a website scrape, or a short interview. Use this whenever the user says "build a brand kit", "document their brand", "pull their brand guidelines", "turn this brand page into a kit", "what are their colors/fonts", or uploads logos, fonts, or a brand book and wants it organized. Also trigger when a static ad, landing page, or design brief needs visual identity rules and no brand kit exists yet for that brand. This is the visual + verbal identity layer. It complements brand-overview and the research folder (strategy layer) — run both before design or copy execution. Minimum input is a website URL; a brand PDF, logo pack, font files, or product shots given at the same time make it better. Output is always two things: the kit saved at `brand/brand-kit.md`, and every brand asset that meets the quality bar (fonts, logos, product images, lifestyle images, illustrations) downloaded into the brain's `assets/` folders so `app-generation` and every design task can use them without asking.
 ---
 
 # Brand Kit Builder
@@ -132,7 +132,7 @@ The brain holds one brand. `assets/` is flat — never create a brand subfolder.
 | Product images | `assets/images/product/` | Packshots and PDP gallery images — the product is the subject |
 | Lifestyle images | `assets/images/lifestyle/` | Photography of the brand's world — people, rituals, product in use, environments |
 | Illustrations | `assets/images/illustrations/` | Mascot states, decorative elements, icon system, how-it-works graphics |
-| The kit | `assets/brand-kit-[brand].md` | The document from Phase 4 |
+| The kit | `brand/brand-kit.md` | The document from Phase 4 |
 
 ### Order of operations
 
@@ -382,7 +382,7 @@ Contact: [Name/role/channel, or "your [Brand] contact"]
 
 ## PHASE 5: DELIVER
 
-1. **Save** the kit as `assets/brand-kit-[brand].md`. The asset files are already in their `assets/` folders from Phase 3 — confirm every file the kit names actually exists at that path.
+1. **Save** the kit as `brand/brand-kit.md`. The asset files are already in their `assets/` folders from Phase 3 — confirm every file the kit names actually exists at that path.
 2. **Present** the kit and the asset inventory to the person
 3. **Lead with status** — one line on where the kit came from and how much is confirmed vs inferred
 4. **Flag the three things that matter most** — usually a licensing constraint, a compliance word swap, and the UGC-rights gap. These are the ones that cost money if missed.
@@ -397,7 +397,7 @@ Contact: [Name/role/channel, or "your [Brand] contact"]
 
 Once confirmed, the kit is the visual and verbal source of truth. Reference it explicitly:
 
-- **`app-generation`** — reads `assets/brand-kit-[brand].md` and pulls fonts, logos, and imagery straight from the `assets/` folders. It stops if the kit or the fonts are missing.
+- **`app-generation`** — reads `brand/brand-kit.md` and pulls fonts, logos, and imagery straight from the `assets/` folders. It stops if the kit or the fonts are missing.
 - **Static ad design / landing pages / decks** — palette, type, logo rules, priority-color rule, imagery temperature
 - **Copywriting skills** (hook writing, scripts, captions — and any copy-standards skill present in the environment) — the Sounds Like Us / Never Say lists and register rules layer on top of them; where they conflict, the brand's compliance swaps win, the human-sounding rules win everywhere else
 - **Ad QA** — the Common Mistakes and Please Don't lists are the QA checklist

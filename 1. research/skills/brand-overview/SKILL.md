@@ -1,6 +1,6 @@
 ---
 name: brand-overview
-description: Builds a brand overview document for either the brand the brain belongs to or one of its competitors — who they are, their full product range, the products that matter for our work, their review platform and review base, their paid-social posture where tools allow, and (for competitors) where they sit relative to our brand. Use this when brain-setup documents the brand or a competitor, when someone says "document this brand", "who is [competitor]", "build the competitor package", or when a new competitor enters the research folder. Output is one markdown file: `brand/brand-overview.md` inside the brand's own research folder or the competitor's folder.
+description: Builds a brand overview document for either the brand the brain belongs to or one of its competitors — who they are, their full product range, the products that matter for our work, their review platform and review base, their paid-social posture where tools allow, and (for competitors) where they sit relative to our brand. Use this when brain-setup documents the brand or a competitor, when someone says "document this brand", "who is [competitor]", "build the competitor package", or when a new competitor enters the research folder. Output is one markdown file: `brand/brand-overview.md` for the brand itself, or `brand/brand-overview.md` inside the competitor's folder under `1. research/competitors/`.
 ---
 
 # Brand Overview
@@ -60,4 +60,4 @@ Bullets for the next person or session: platform quirks discovered while pulling
 - Facts are stated or observed and marked as which. Inferences are labeled as yours.
 - Product facts live in the product profiles; the overview summarizes and links, it does not duplicate ingredient lists or spec tables.
 - No empty sections. If a section doesn't apply or couldn't be captured, one line saying so, or drop it.
-- Save to `1. research/brand/brand-overview.md` for the brand itself, or `1. research/competitors/<slug>/brand/brand-overview.md` for a competitor. Refresh the captured date whenever it's rebuilt.
+- Save to `brand/brand-overview.md` for the brand itself, or `1. research/competitors/<slug>/brand/brand-overview.md` for a competitor. Refresh the captured date whenever it's rebuilt.

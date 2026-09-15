@@ -19,7 +19,7 @@ Before writing a line of markup, read the kit and locate the assets.
 
 | What | Where | Notes |
 |---|---|---|
-| Brand kit — rules, hexes, voice | `assets/brand-kit*.md` | The output of the `brand-kit` skill (saved as `assets/brand-kit-[brand].md`). If it isn't there, stop and run that skill first — do not invent a palette. |
+| Brand kit — rules, hexes, voice | `brand/brand-kit.md` | The output of the `brand-kit` skill (saved as `brand/brand-kit.md`). If it isn't there, stop and run that skill first — do not invent a palette. |
 | Fonts | `assets/fonts/` | Licensed to the brand for brand work only. Read the kit's licensing note before use. |
 | Logos and mascot | `assets/logos/` | The kit's 01 — Logo section says which mark goes on which surface. |
 | Illustrations | `assets/images/illustrations/` | Sparkles, shapes, mascot states, how-it-works steps — whatever the kit's 05 section lists. |

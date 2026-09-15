@@ -20,7 +20,7 @@ What we believe will happen and why. One sentence on the mechanism: if this pers
 ## The strategy
 
 **Angle:** link to the file in `2. ideate/messaging-angles/`
-**Product truth it leans on:** from the product profile in `1. research/product/`
+**Product truth it leans on:** from the product profile in `brand/products/`
 **Format:** from `2. ideate/visual-formats/`
 **Offer:** the one- or two-sentence offer statement
 
