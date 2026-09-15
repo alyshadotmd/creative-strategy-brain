@@ -47,7 +47,7 @@ Confirm the brain matches the map below. Create anything missing. Do not create 
       brand/                  brand-overview.md
       product/                one <product-name>.md per product you pulled reviews for
       customer/               one <product-name>-reviews.csv per product (+ raw export)
-  creators/ · articles/ · skills/
+  creators/ · skills/
 2. ideate/  ·  3. create/  ·  4. analyze/
 assets/
   fonts/ · logos/ · images/product/ · images/lifestyle/ · images/illustrations/

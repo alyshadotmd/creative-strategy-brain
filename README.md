@@ -12,7 +12,7 @@ Each numbered folder represents one stage of the creative strategy flywheel. Sav
 
 | Folder | What goes here |
 |---|---|
-| `1. research` | Anything about customer research or product research. `brand/` holds the brand's own overview, `product/` one facts-only profile per product, `customer/reviews/` and `customer/ad comments/` the voice of customer, `customer/personas/` the personas the engine reads, `competitors/<brand>/` one folder per competitor with the same `brand/`, `product/`, `customer/` shape, plus `creators/` and `articles/`. |
+| `1. research` | Anything about customer research or product research. `brand/` holds the brand's own overview, `product/` one facts-only profile per product, `customer/reviews/` and `customer/ad comments/` the voice of customer, `customer/personas/` the personas the engine reads, `competitors/<brand>/` one folder per competitor with the same `brand/`, `product/`, `customer/` shape, plus `creators/`. |
 | `2. ideate` | Anything about generating new ad ideas and turning them into briefs. The creative strategy engine lives here with the libraries it draws on — `visual-formats/`, `messaging-angles/`, `hooks/` (each has a README saying what goes in it) — plus the concept log `ad-concepts.md`, the briefs themselves, and briefing skills/templates. |
 | `3. create` | Anything about producing, checking, and shipping the actual creative. Static and video production workflows, generation skills, production reference material, QA checklists, compliance/claims checks, launch ops, naming/tagging conventions, and handoff checklists. |
 | `4. analyze` | Anything about post-launch performance analysis. Reporting frameworks, teardown protocols, creative analysis skills, what-worked/what-didn't learnings. |
