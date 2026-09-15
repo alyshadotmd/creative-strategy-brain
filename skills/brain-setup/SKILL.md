@@ -49,8 +49,14 @@ Confirm the brain matches the map below. Create anything missing. Do not create 
       customer/               one <product-name>-reviews.csv per product (+ raw export)
   creators/ · skills/
 2. ideate/  ·  3. create/  ·  4. analyze/
+pipeline/
+  README.md · roadmap.md
+  _template/                  copy to open a concept
+  <number>-<slug>/            one folder per ad
 assets/
   fonts/ · logos/ · images/product/ · images/lifestyle/ · images/illustrations/
+  footage/<shoot-or-creator>/ raw clips, reusable across concepts
+  ads/<ad-name>/              finished cuts, reusable as source
   brand-kit-<brand>.md
 skills/ · integrations/ · strategy/ · team/
 ```
