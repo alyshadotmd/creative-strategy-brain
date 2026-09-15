@@ -1,13 +1,13 @@
 ---
 name: brain-setup
-description: Onboards a new brand into the brain in under an hour, with the LLM doing the work. Use this the first time a brand is set up in a brain, or when a person says "set up the brain", "onboard this brand", "get the brain ready for [brand]", or the research folders are still empty. Runs the setup sequence in order — verify the folder structure, build the brand kit and assets, confirm app-generation is unblocked, document the brand's own products, collect every customer review, then identify at least three competitors and build a brand overview, product profiles, and review exports for each — and ends with a status report of what is filled and what is still missing. Minimum input is a website URL; everything else it asks for or finds.
+description: Onboards a new brand into the brain, with the LLM doing the work. Use this the first time a brand is set up in a brain, or when a person says "set up the brain", "onboard this brand", "get the brain ready for [brand]", or the research folders are still empty. Runs the setup sequence in order — verify the folder structure, build the brand kit and assets, confirm app-generation is unblocked, document the brand's own products, collect every customer review, then identify at least three competitors and build a brand overview, product profiles, and review exports for each — and ends with a status report of what is filled and what is still missing. Minimum input is a website URL; everything else it asks for or finds.
 ---
 
 # Brain Setup
 
 One brain holds one brand. This skill takes an empty brain and a website URL and fills the folders that every downstream skill depends on. The person should have to do very little: answer a few questions, drop in files they already have, approve a list of competitors. Everything else is fetched, extracted, and saved by you.
 
-**The target is under an hour.** Work the steps in order, but run independent fetches in parallel where you can, and never wait on a person for something you can find yourself. If a step cannot be finished, record the gap and move on — an honest status report at the end beats a stalled setup.
+**Finish the whole sequence.** Work the steps in order, but run independent fetches in parallel where you can, and never wait on a person for something you can find yourself. Every deliverable in the steps below is required, not optional. Record a gap only when the data genuinely cannot be obtained — it is not public, it sits behind a login, or the person has to supply it. The amount of work already done in a session is never a reason to stop early.
 
 **Standing rules for the whole run**
 - Never invent data. A review, a price, an ingredient, a competitor claim — if you did not read it from a source, it does not go in a file. Gaps are recorded as gaps.
@@ -123,7 +123,7 @@ Keep the raw export next to it as `<product-name>-reviews-raw.<ext>`. Never edit
 2. **`product/<product-name>.md`** — run the `product-info` skill for each product you are pulling reviews for. Same standard as Step 3. Profile the products that compete with ours, not the competitor's entire catalog; list the rest of their range in the brand overview.
 3. **`customer/<product-name>-reviews.csv`** — same intake paths and same schema as Step 4, pulled from the competitor's site. Same completeness check. Same raw file alongside.
 
-Run competitors in parallel where you can — three sites' worth of fetching is the longest part of the hour.
+Run competitors in parallel where you can — three sites' worth of fetching is the largest step.
 
 ## Step 6: Status report
 
@@ -140,6 +140,6 @@ Close with the next step: run `review-audit` (`1. research/skills/review-audit/S
 
 ---
 
-## Time budget (guide, not a rule)
+## Completeness
 
-Steps 0–1 in the first fifteen minutes, running while the person answers the intake questions. Steps 2–3 in the next ten. Step 4 ten to fifteen depending on review volume and which intake path works. Step 5 twenty, with the three competitors fetched in parallel. Step 6 five. If any step runs long, cap it, record the gap, and keep moving — the report at the end is what lets the next session finish it.
+There is no step budget and no session budget. The setup is done when every deliverable in Steps 0–6 exists in the brain, or is recorded as a gap with the reason it could not be obtained from the source. A large step is not a reason to sample it: many products, many competitors, or high review volume means the step takes longer, not that it gets trimmed. The status report names what is genuinely missing from the sources — never what was cut to reach an ending.
