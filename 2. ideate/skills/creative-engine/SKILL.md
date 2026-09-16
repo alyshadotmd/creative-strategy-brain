@@ -39,7 +39,7 @@ Step 7  VISUAL FORMAT                             → 2. ideate/visual-formats/
 Step 8  HOOK                                      → 2. ideate/hooks/
         │  the opening expression: text and visual
         ▼
-AD CONCEPT  → 2. ideate/ad-concepts.md  → 3. create
+AD CONCEPT  → pipeline/concepts.md  → a concept folder in pipeline/
 ```
 
 One really intentional ad. Or hundreds of ads that cover a full funnel, mapped strategically.
@@ -122,7 +122,7 @@ Format is the container for the offer. Match the container's purpose to the stag
 
 The hook is the opening expression of the offer, at this stage, in this format. Text and visual together: the words that stop the scroll and the frames that earn the next second. When the trigger moment is strong, the hook usually lives inside it — the first second of the ad is the first second of the moment. The swipe collections are there to draw from.
 
-**Pain or desire + persona + stage + trigger moment + angle + offer + format + hook: that's a full ad concept.** Log it as one row in `2. ideate/ad-concepts.md` and it's ready for `3. create`.
+**Pain or desire + persona + stage + trigger moment + angle + offer + format + hook: that's a full ad concept.** Log it as one row in `pipeline/concepts.md`, open its folder from `pipeline/_template/`, and write `overview.md`. It is then ready for the create skills.
 
 ## Entering in the middle
 
@@ -138,7 +138,7 @@ Usually you enter at the top. Sometimes you arrive mid-map with a component alre
 
 One goal, one pass through the map, one concept: that's a complete use of this engine.
 
-When the goal is volume ("cover the funnel for this persona," "ten concepts for the sale"), run more passes: one persona has many trigger moments, one trigger moment can take several angles, one angle expresses differently at each stage it honestly serves, and one offer can ride multiple formats. Every concept gets a row in `2. ideate/ad-concepts.md` so the batch stays visible and the coverage gaps show — which personas have no upper-funnel concepts, which stages have only one trigger moment, which angles have never been tested.
+When the goal is volume ("cover the funnel for this persona," "ten concepts for the sale"), run more passes: one persona has many trigger moments, one trigger moment can take several angles, one angle expresses differently at each stage it honestly serves, and one offer can ride multiple formats. Every concept gets a row in `pipeline/concepts.md` so the batch stays visible and the coverage gaps show — which personas have no upper-funnel concepts, which stages have only one trigger moment, which angles have never been tested.
 
 ## The loop
 

@@ -12,11 +12,11 @@ One file per angle, named for the strategy it uses (lowercase, hyphenated). Each
 - **Personas it fits** — by persona file name in `1. research/customer/personas/`
 - **Trigger moments it pairs with** — which stage transitions this angle can carry without contortion
 - **Expressions by stage** — how the same core truth is said at each awareness stage it honestly serves
-- **Concepts that used it** — rows in `2. ideate/ad-concepts.md`
+- **Concepts that used it** — rows in `pipeline/concepts.md`
 - **Results** — what `4. analyze` learned when it ran; expand the entry when it keeps winning
 
 ## Rules
 
 - The core truth of an angle never changes; only its expression does. If you're rewriting the truth, that's a new angle.
 - An angle with no product truth behind it is a slogan. An angle with no review theme behind it is a guess.
-- Add an angle when a concept in `ad-concepts.md` uses a strategy that isn't here yet. A library that never grows means you stopped looking.
+- Add an angle when a concept in `pipeline/concepts.md` uses a strategy that isn't here yet. A library that never grows means you stopped looking.

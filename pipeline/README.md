@@ -35,10 +35,12 @@ The **post-launch** teardown asks why the ad performed the way it did, reference
 
 ## Status
 
-Tracked as a field in each `overview.md` and summarized across concepts in `roadmap.md`:
+Tracked as a field in each `overview.md` and across every concept in `concepts.md`:
 
 `concept` · `scripted` · `briefed` · `in production` · `in QA` · `live` · `retired`
 
 ## Relationship to the concept log
 
-`2. ideate/ad-concepts.md` stays the index — one row per concept, pointing at its folder. Read the log to see coverage across personas, stages and angles. Open the folder to work on one ad. Do not merge them.
+`concepts.md` in this folder is the register — one row per concept, pointing at its folder. Read it for what is in flight and for coverage across personas, stages and angles. Open a concept folder to work on one ad.
+
+It lives here rather than in `2. ideate/` for the same reason the concept folders do: a numbered folder holds knowledge that applies across every ad, and a row-per-concept log is instance data. `creative-engine` writes into it from ideate, the same way `script-writing` writes into a concept folder from create.

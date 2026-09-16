@@ -53,7 +53,7 @@ brand/
 4. analyze/
   teardowns/<ad-name>.md      one per launched ad
 pipeline/
-  README.md · roadmap.md
+  README.md · concepts.md
   _template/                  copy to open a concept
   <number>-<slug>/            one folder per ad
 assets/
