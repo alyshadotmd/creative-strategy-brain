@@ -58,7 +58,6 @@ To save a skill:
 | `customer-psychology-research` | `1. research/skills/customer-psychology-research/SKILL.md` | Research — the state a persona is in, and the moments the pain surfaces |
 | `creative-engine` | `2. ideate/skills/creative-engine/SKILL.md` | Ideate — product and customer in, ad concepts out |
 | `creative-mechanics` | `2. ideate/skills/creative-mechanics/SKILL.md` | Ideate — the structural move between an angle and a format |
-| `yapper-hook-writing` | `2. ideate/skills/yapper-hook-writing/SKILL.md` | Ideate — three-part hook systems for talking-head video |
 | `voice-copy-standards` | `3. create/skills/voice-copy-standards/SKILL.md` | Create — how copy sounds, applied to every skill that writes words |
 | `creative-analysis` | `4. analyze/skills/creative-analysis/SKILL.md` | Analyze — diagnose why an ad is or isn't working |
 | `review-audit` | `1. research/skills/review-audit/SKILL.md` | Research — mines reviews for pains, desires, triggers, personas, language |
