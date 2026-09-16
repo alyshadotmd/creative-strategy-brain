@@ -5,7 +5,7 @@ description: Builds and restyles apps (Astro pages, reports, dashboards, matrice
 
 # App Generation
 
-Every app is fully custom-branded. Not "themed" — the stock framework look must be gone entirely. The brand kit in `assets/` is the only source of truth for what the app looks like; this skill is the method for turning that kit into a working page.
+Every app is fully custom-branded. Not "themed" — the stock framework look must be gone entirely. The brand kit in `brand/` is the only source of truth for what the app looks like; this skill is the method for turning that kit into a working page.
 
 **Standing rule (applies to every app, no matter who asks):** never ship an app in a default design-system presentation — a stock base-layout theme, stock scaffold styling, or a stock component-library theme. Read this skill before every build or restyle.
 
@@ -20,9 +20,9 @@ Before writing a line of markup, read the kit and locate the assets.
 | What | Where | Notes |
 |---|---|---|
 | Brand kit — rules, hexes, voice | `brand/brand-kit.md` | The output of the `brand-kit` skill (saved as `brand/brand-kit.md`). If it isn't there, stop and run that skill first — do not invent a palette. |
-| Fonts | `assets/fonts/` | Licensed to the brand for brand work only. Read the kit's licensing note before use. |
-| Logos and mascot | `assets/logos/` | The kit's 01 — Logo section says which mark goes on which surface. |
-| Illustrations | `assets/images/illustrations/` | Sparkles, shapes, mascot states, how-it-works steps — whatever the kit's 05 section lists. |
+| Fonts | `brand/fonts/` | Licensed to the brand for brand work only. Read the kit's licensing note before use. |
+| Logos and mascot | `brand/logos/` | The kit's 01 — Logo section says which mark goes on which surface. |
+| Illustrations | `brand/illustrations/` | Sparkles, shapes, mascot states, how-it-works steps — whatever the kit's 05 section lists. |
 | Photography | `assets/images/product/`, `assets/images/lifestyle/` | Rights per the kit's 06 section. |
 | Built examples | wherever this environment keeps apps built for this brand | If a prior on-brand app exists, copy its **structure, tokens and components**. Check its fonts against the kit — older apps may predate a font decision. |
 
@@ -41,8 +41,8 @@ If the kit is missing a value you need (a muted label color, a border color, a h
 ## STEP 1: PAGE SETUP
 
 - Build the page as a standalone `src/pages/index.astro` that owns its full `<head>` and styling. If a shared base layout is used instead, every component-library default must be fully overridden — remember some libraries ship a global stylesheet that injects styles onto native elements (see the dropdown recipe in Step 4).
-- **Copy the font files** from `assets/fonts/` into the app's `src/fonts/` — NOT `public/`. Vite must resolve the URL under the app's route prefix.
-- **Never load Google Fonts** or any external font for a branded app. If the kit's fonts aren't in `assets/fonts/`, stop and ask for them; do not substitute.
+- **Copy the font files** from `brand/fonts/` into the app's `src/fonts/` — NOT `public/`. Vite must resolve the URL under the app's route prefix.
+- **Never load Google Fonts** or any external font for a branded app. If the kit's fonts aren't in `brand/fonts/`, stop and ask for them; do not substitute.
 - Declare each face once. Pattern (fill in the kit's typefaces and the weights you actually have files for):
 
 ```css
@@ -137,7 +137,7 @@ Rules that travel across brands:
 
 If a prior on-brand app exists for this brand, copy its working CSS instead of re-deriving. Otherwise build from these. Every recipe uses tokens only — no raw hexes in component CSS.
 
-- **Masthead:** brand mark (kit says which — mascot vs logo, and on which surface), structural kicker with dot separators, emotional h1 with one signature-treated word, 2px `--rule` bottom border, optional illustration from `assets/images/illustrations/` absolutely positioned top-right.
+- **Masthead:** brand mark (kit says which — mascot vs logo, and on which surface), structural kicker with dot separators, emotional h1 with one signature-treated word, 2px `--rule` bottom border, optional illustration from `brand/illustrations/` absolutely positioned top-right.
 - **Sticky tab nav:** `position:sticky; top:0`, structural all-caps links, hover `--signal-soft`, active tab solid `--signal` with ink text. **The active tab is the screen's signal moment** — nothing else on that screen gets `--signal`.
 - **Cards:** `--surface` or `--surface-2` background, 1.5–2px border in `--rule`/`--rule-2` (`--ink` border for emphasized cards), radius ~10–14px, `var(--card-shadow)`. Flat offset, never blurred — unless the kit's imagery section says the brand uses soft shadows.
 - **Chips/pills:** structural face, all caps, ~10px, `--support` fill with ink text. `--accent` variant for warnings/guesses. Outlined variant with `--rule-2` border.

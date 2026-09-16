@@ -4,7 +4,7 @@ This is the map for where things live in the brain. Read it before saving anythi
 
 The brain is organized around the creative strategy flywheel (numbered folders) plus a set of support folders. One brain holds one brand.
 
-**New brand? Start with `skills/brain-setup/SKILL.md`.** It fills `assets/` and `1. research/` from a website URL and hands off to the rest of the system.
+**New brand? Start with `skills/brain-setup/SKILL.md`.** It fills `brand/`, `assets/` and `1. research/` from a website URL and hands off to the rest of the system.
 
 ## The flywheel folders (numbered)
 
@@ -24,8 +24,8 @@ Each numbered folder represents one stage of the creative strategy flywheel. Sav
 | Folder | What goes here |
 |---|---|
 | `pipeline` | One folder per ad moving through the workflow — its overview, script, brief, QA and launched name. Documents only; all media lives in `assets/`. See `pipeline/README.md`. |
-| `brand` | Everything the brand asserts about itself: `brand-overview.md`, `brand-kit.md`, `claims.md`, and `products/<product>.md` one per product. Asserted facts, as opposed to the discovered ones in `1. research/`. Documents only — the media the kit names lives in `assets/`. See `brand/README.md`. |
-| `assets` | All media, flat (one brand). `fonts/`, `logos/`, `images/product/`, `images/lifestyle/`, `images/illustrations/`, `footage/<shoot-or-creator>/` for raw clips, `ads/<ad-name>/` for finished cuts. Raw footage and finished ads get repurposed across concepts, so they live here rather than inside any one of them. Filled by the `brand-kit` skill; read by `app-generation`. |
+| `brand` | Everything the brand asserts about itself: `brand-overview.md`, `brand-kit.md`, `claims.md`, `products/<product>.md` one per product, plus the identity files themselves in `logos/`, `fonts/` and `illustrations/`. Asserted facts, as opposed to the discovered ones in `1. research/`. See `brand/README.md`. |
+| `assets` | The content library, flat (one brand). `images/product/`, `images/lifestyle/`, `footage/<shoot-or-creator>/` for raw clips, `ads/<ad-name>/` for finished cuts. An open pile that grows and gets drawn on per concept — it holds nothing that belongs to a single one, which is why footage and finished ads live here rather than in `pipeline/`. Brand identity files are not here; they are in `brand/`. |
 | `team` | One folder per person on the team. Each person stores context they need that is not relevant to the rest of the team. Example: `team/<name>/...` |
 | `integrations` | One folder per integration. Store context that helps the assistant navigate that specific integration (what its data means here, where to find what, how to read it). Example: `integrations/<app>/index.md` |
 | `strategy` | Business context: what matters to the business, current business objectives, and priorities right now. |
@@ -35,7 +35,7 @@ Each numbered folder represents one stage of the creative strategy flywheel. Sav
 There are two homes for skills. Pick by scope:
 
 - **Stage skills** belong to one flywheel stage. Save them inside that stage's `skills` folder: `<numbered stage>/skills/<skill-name>/SKILL.md`.
-- **Cross-stage skills** are used across all four stages, or build out a support folder (for example, `app-generation`, or `brand-kit`, which fills `assets/`). Save these in the top-level `skills` folder: `skills/<skill-name>/SKILL.md`.
+- **Cross-stage skills** are used across all four stages, or build out a support folder (for example, `app-generation`, or `brand-kit`, which fills `brand/` and `assets/`). Save these in the top-level `skills` folder: `skills/<skill-name>/SKILL.md`.
 
 If a skill is only ever run during one stage, it is a stage skill — even if other stages read its output.
 
@@ -49,8 +49,8 @@ To save a skill:
 
 | Skill | Path | Scope |
 |---|---|---|
-| `brain-setup` | `skills/brain-setup/SKILL.md` | Cross-stage — onboards a new brand; fills `assets/` and `1. research/` |
-| `brand-kit` | `skills/brand-kit/SKILL.md` | Cross-stage — builds the brand kit and harvests assets into `assets/` |
+| `brain-setup` | `skills/brain-setup/SKILL.md` | Cross-stage — onboards a new brand; fills `brand/`, `assets/` and `1. research/` |
+| `brand-kit` | `skills/brand-kit/SKILL.md` | Cross-stage — builds the brand kit and harvests identity files into `brand/`, imagery into `assets/` |
 | `app-generation` | `skills/app-generation/SKILL.md` | Cross-stage — builds on-brand apps, reports, dashboards from the kit |
 | `product-info` | `1. research/skills/product-info/SKILL.md` | Research — facts-only profile per product (own brand or competitor) |
 | `brand-overview` | `1. research/skills/brand-overview/SKILL.md` | Research — brand overview (own brand or competitor) |

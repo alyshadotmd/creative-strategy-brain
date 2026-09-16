@@ -17,8 +17,13 @@ A competitor's asserted facts are still discovered from our side, so they stay i
 | File | What it holds | Written by |
 |---|---|---|
 | `brand-overview.md` | Who the brand is, the full product range, which products matter for the work, the review base, paid-social posture. | `brand-overview` |
-| `brand-kit.md` | Visual and verbal identity — logo, color, type, voice, imagery, usage rules, asset inventory. The media it names lives in `assets/`. | `brand-kit` |
+| `brand-kit.md` | Visual and verbal identity — logo, color, type, voice, imagery, usage rules, asset inventory. | `brand-kit` |
+| `logos/` `fonts/` `illustrations/` | The identity files themselves. A closed set, approved once and governed by the rules in the kit, which is why they sit beside it rather than in the content library. | `brand-kit` |
 | `claims.md` | What can and cannot be said about the brand and its products. | maintained by hand |
 | `products/<product>.md` | One facts-only profile per product. No benefits, no framing, no field the source doesn't state. | `product-info` |
 
-Media never lives here. Fonts, logos, imagery, footage and finished ads all live in `assets/`; this folder references them by path.
+## Identity versus content
+
+The brand's own marks, typefaces and illustration system live here because they are identity: a closed set that changes rarely and is governed by the kit's usage rules.
+
+`assets/` is the content library — product and lifestyle imagery, raw footage, finished ads. An open pile that grows, gets drawn on per concept, and nobody approves as a set. Nothing in there belongs to any one concept, which is why it isn't in `pipeline/` either.

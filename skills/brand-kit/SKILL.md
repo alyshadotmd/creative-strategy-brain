@@ -1,6 +1,6 @@
 ---
 name: brand-kit
-description: Builds a structured brand & asset kit document (logo, color, type, voice, imagery, photography, usage rules, asset inventory) for any brand — from a client's existing brand page, a folder of uploaded assets, a website scrape, or a short interview. Use this whenever the user says "build a brand kit", "document their brand", "pull their brand guidelines", "turn this brand page into a kit", "what are their colors/fonts", or uploads logos, fonts, or a brand book and wants it organized. Also trigger when a static ad, landing page, or design brief needs visual identity rules and no brand kit exists yet for that brand. This is the visual + verbal identity layer. It complements brand-overview and the research folder (strategy layer) — run both before design or copy execution. Minimum input is a website URL; a brand PDF, logo pack, font files, or product shots given at the same time make it better. Output is always two things: the kit saved at `brand/brand-kit.md`, and every brand asset that meets the quality bar (fonts, logos, product images, lifestyle images, illustrations) downloaded into the brain's `assets/` folders so `app-generation` and every design task can use them without asking.
+description: Builds a structured brand & asset kit document (logo, color, type, voice, imagery, photography, usage rules, asset inventory) for any brand — from a client's existing brand page, a folder of uploaded assets, a website scrape, or a short interview. Use this whenever the user says "build a brand kit", "document their brand", "pull their brand guidelines", "turn this brand page into a kit", "what are their colors/fonts", or uploads logos, fonts, or a brand book and wants it organized. Also trigger when a static ad, landing page, or design brief needs visual identity rules and no brand kit exists yet for that brand. This is the visual + verbal identity layer. It complements brand-overview and the research folder (strategy layer) — run both before design or copy execution. Minimum input is a website URL; a brand PDF, logo pack, font files, or product shots given at the same time make it better. Output is always two things: the kit saved at `brand/brand-kit.md`, and every brand asset that meets the quality bar (fonts, logos, product images, lifestyle images, illustrations) downloaded into the brain — identity files into `brand/`, imagery into `assets/` — so `app-generation` and every design task can use them without asking.
 ---
 
 # Brand Kit Builder
@@ -20,7 +20,7 @@ Brand kits come from four kinds of source. Identify which you have before doing 
 | Source type | What it looks like | How to work it |
 |---|---|---|
 | **A. Existing brand page or book** | A brand-kit URL, a PDF brand book, a Notion/Figma guidelines page | Best case. Fetch or read it in full. Your job is to extract, structure, and tighten — not reinvent. Preserve the brand's own wording for rules and examples. |
-| **B. Uploaded assets, no guidelines** | Logo PNGs, font files, product shots, a Canva export | Inventory the files, pull colors and type from what's there, then infer the rules and label every inferred rule as such. Uploaded originals beat anything scraped from the site — save them into `assets/` first (Phase 3), then fill gaps from the site. |
+| **B. Uploaded assets, no guidelines** | Logo PNGs, font files, product shots, a Canva export | Inventory the files, pull colors and type from what's there, then infer the rules and label every inferred rule as such. Uploaded originals beat anything scraped from the site — save them into `brand/` or `assets/` first (Phase 3), then fill gaps from the site. |
 | **C. Website only** | Just a URL | Scrape the live site: fetch the homepage, a product page, and the about page. Pull hex codes and font names from CSS where you can (`web_fetch` the page, look for `font-family`, `--color-*` variables, `background`, `color` declarations). Screenshot-level observations count but flag them as observed, not stated. The site is also the primary place to **harvest asset files** (Phase 3) — logos, product and lifestyle images, illustrations, and self-hosted font files. |
 | **D. Nothing yet** | Brand is pre-launch or the user just has ideas | Run the interview below, then build a **proposed** kit clearly labeled as a draft for the brand to approve. |
 
@@ -119,19 +119,19 @@ A kit built from source type A should be mostly [stated]. A kit built from C or 
 
 ## PHASE 3: HARVEST AND SAVE THE ASSETS
 
-The kit describes; the folders deliver. This phase fills the brain's `assets/` folders from whatever the user gave you plus the live site, so nobody downstream has to go hunting. It runs **every time**, even when the only input is a URL.
+The kit describes; the folders deliver. This phase fills `brand/` with the identity files and `assets/` with the imagery, from whatever the user gave you plus the live site, so nobody downstream has to go hunting. It runs **every time**, even when the only input is a URL.
 
 ### Where things go
 
-The brain holds one brand. `assets/` is flat — never create a brand subfolder.
+The brain holds one brand. Both folders are flat — never create a brand subfolder. Identity files (marks, typefaces, the illustration system) go to `brand/`; product and lifestyle imagery go to `assets/`.
 
 | Category | Folder | What belongs here |
 |---|---|---|
-| Fonts | `assets/fonts/` | Every typeface + weight the brand actually uses, as font files |
-| Logos | `assets/logos/` | Wordmark, mark/monogram, mascot, reversed/one-color variants |
+| Fonts | `brand/fonts/` | Every typeface + weight the brand actually uses, as font files |
+| Logos | `brand/logos/` | Wordmark, mark/monogram, mascot, reversed/one-color variants |
 | Product images | `assets/images/product/` | Packshots and PDP gallery images — the product is the subject |
 | Lifestyle images | `assets/images/lifestyle/` | Photography of the brand's world — people, rituals, product in use, environments |
-| Illustrations | `assets/images/illustrations/` | Mascot states, decorative elements, icon system, how-it-works graphics |
+| Illustrations | `brand/illustrations/` | Mascot states, decorative elements, icon system, how-it-works graphics |
 | The kit | `brand/brand-kit.md` | The document from Phase 4 |
 
 ### Order of operations
@@ -145,16 +145,16 @@ The brain holds one brand. `assets/` is flat — never create a brand subfolder.
 
 ### Quality bar — the minimum to save a file
 
-Files below the bar are **not saved**. They are listed in the kit under "Found but below the bar" with the source URL, so a designer knows the asset exists and where to ask for the original. This keeps `assets/` trustworthy: if a file is in there, it is safe to build with.
+Files below the bar are **not saved**. They are listed in the kit under "Found but below the bar" with the source URL, so a designer knows the asset exists and where to ask for the original. This keeps both folders trustworthy: if a file is in there, it is safe to build with.
 
-**Fonts** (`assets/fonts/`)
+**Fonts** (`brand/fonts/`)
 - Real font files only: `.woff2`, `.woff`, `.ttf`, or `.otf`. Never save a CSS file, a Google Fonts link, or a PDF-embedded subset as a "font".
 - Save every face **and weight** the site actually uses for headlines, body, and UI. A brand with a display face and a body face at two weights each = four files minimum. Missing a weight that the site uses is a gap — list it.
 - Self-hosted webfonts pulled from the site are licensed to the brand. Save them, and write the licensing note into the kit (03 — Type): brand work only, ask before any other use.
 - Open-license fonts (Google Fonts / SIL OFL): download the static `.ttf` files from the official source rather than scraping the site. Note the license as open in the kit.
 - If the font cannot be sourced (proprietary, not self-hosted, served from a third-party font service like Adobe Fonts or Typekit): save nothing, record the exact font name, weights, and where it is served from under "Not here — ask the brand contact". Do not substitute a look-alike.
 
-**Logos** (`assets/logos/`)
+**Logos** (`brand/logos/`)
 - Vector (`.svg`) is the target. If only raster exists: `.png` with a **transparent background**, **≥ 1000 px** on the long edge.
 - Minimum set to call the category complete: the primary mark, plus at least one of (reversed/one-color variant, standalone mark or monogram). A brand with a mascot needs the mascot mark too.
 - Below the bar: favicons, `.ico`, `apple-touch-icon`, any logo under 400 px, logos on a baked-in non-transparent background, logos cropped out of screenshots. Record them; do not save them.
@@ -171,7 +171,7 @@ Files below the bar are **not saved**. They are listed in the kit under "Found b
 - Target set: **5 or more** distinct scenes. Under 5 is a gap worth flagging — a strategist will run out of imagery fast.
 - Below the bar: anything under 800 px, banners with headlines baked in, heavily filtered social crops, screenshots.
 
-**Illustrations** (`assets/images/illustrations/`)
+**Illustrations** (`brand/illustrations/`)
 - `.svg` preferred; otherwise `.png` with transparency, **≥ 800 px** on the long edge.
 - Part of the brand's visual system: mascot and its expression states, decorative elements (sparkles, shapes, textures), how-it-works or ritual graphics, a custom icon set.
 - No minimum count — some brands have none. If none exist, say so in the kit and move on. But if the site clearly uses a mascot or illustration style and you could not capture usable files, that is a gap to flag.
@@ -216,7 +216,7 @@ Page note: [any freshness/contact note from the source, verbatim]
 
 The marks: [Which mark on which surface.]
 
-Marks: [List of variants]. Files: `assets/logos/` — [filenames per variant].
+Marks: [List of variants]. Files: `brand/logos/` — [filenames per variant].
 
 **Please do**
 - [Clear-space rule]
@@ -277,7 +277,7 @@ Marks: [List of variants]. Files: `assets/logos/` — [filenames per variant].
 **Casing**
 - [Rule per face]
 
-**Fonts:** [Names.] Files: `assets/fonts/` — [one filename per face/weight, or "not sourced — see Not here"].
+**Fonts:** [Names.] Files: `brand/fonts/` — [one filename per face/weight, or "not sourced — see Not here"].
 
 > Licensing note: [Verbatim license scope from the source. Who may use these, where, and who to ask otherwise.]
 
@@ -305,7 +305,7 @@ Marks: [List of variants]. Files: `assets/logos/` — [filenames per variant].
 
 [Illustration vs photo lead. Temperature. Contrast. Backdrop rules.]
 
-**Product illustrations:** [List.] Files: `assets/images/illustrations/` — [filenames].
+**Product illustrations:** [List.] Files: `brand/illustrations/` — [filenames].
 
 **The mascot / character:** [Fixed attributes, expression states, default, forbidden surfaces.]
 
@@ -341,7 +341,7 @@ Contact: [Name/role/channel, or "your [Brand] contact"]
 
 ---
 
-## Assets saved in `assets/`
+## Assets saved
 
 [Dedup note if applicable.]
 
@@ -349,7 +349,7 @@ Contact: [Name/role/channel, or "your [Brand] contact"]
 - `logos/` ([n] files) — [filenames]
 - `images/product/` ([n] files) — [filenames, grouped by product]
 - `images/lifestyle/` ([n] files) — [one-line summary of scenes]
-- `images/illustrations/` ([n] files) — [summary]
+- `brand/illustrations/` ([n] files) — [summary]
 
 **Category status:** Fonts [complete / gaps] · Logos [complete / gaps] · Product [complete / gaps] · Lifestyle [complete / gaps] · Illustrations [complete / gaps / none exist]
 
@@ -382,7 +382,7 @@ Contact: [Name/role/channel, or "your [Brand] contact"]
 
 ## PHASE 5: DELIVER
 
-1. **Save** the kit as `brand/brand-kit.md`. The asset files are already in their `assets/` folders from Phase 3 — confirm every file the kit names actually exists at that path.
+1. **Save** the kit as `brand/brand-kit.md`. The asset files are already in `brand/` and `assets/` from Phase 3 — confirm every file the kit names actually exists at that path.
 2. **Present** the kit and the asset inventory to the person
 3. **Lead with status** — one line on where the kit came from and how much is confirmed vs inferred
 4. **Flag the three things that matter most** — usually a licensing constraint, a compliance word swap, and the UGC-rights gap. These are the ones that cost money if missed.
@@ -397,7 +397,7 @@ Contact: [Name/role/channel, or "your [Brand] contact"]
 
 Once confirmed, the kit is the visual and verbal source of truth. Reference it explicitly:
 
-- **`app-generation`** — reads `brand/brand-kit.md` and pulls fonts, logos, and imagery straight from the `assets/` folders. It stops if the kit or the fonts are missing.
+- **`app-generation`** — reads `brand/brand-kit.md` and pulls fonts and logos from `brand/` and imagery from `assets/`. It stops if the kit or the fonts are missing.
 - **Static ad design / landing pages / decks** — palette, type, logo rules, priority-color rule, imagery temperature
 - **Copywriting skills** (hook writing, scripts, captions — and any copy-standards skill present in the environment) — the Sounds Like Us / Never Say lists and register rules layer on top of them; where they conflict, the brand's compliance swaps win, the human-sounding rules win everywhere else
 - **Ad QA** — the Common Mistakes and Please Don't lists are the QA checklist

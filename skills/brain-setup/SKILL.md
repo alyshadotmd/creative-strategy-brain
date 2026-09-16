@@ -39,6 +39,7 @@ Confirm the brain matches the map below. Create anything missing. Do not create 
 brand/
   brand-overview.md · brand-kit.md · claims.md
   products/<product-name>.md  one facts-only profile per product
+  logos/ · fonts/ · illustrations/   identity files, governed by the kit
 1. research/
   customer/
     reviews/                  one <product-name>-reviews.csv per product (+ raw export)
@@ -57,7 +58,7 @@ pipeline/
   _template/                  copy to open a concept
   <number>-<slug>/            one folder per ad
 assets/
-  fonts/ · logos/ · images/product/ · images/lifestyle/ · images/illustrations/
+  images/product/ · images/lifestyle/
   footage/<shoot-or-creator>/ raw clips, reusable across concepts
   ads/<ad-name>/              finished cuts, reusable as source
 skills/ · integrations/ · strategy/ · team/
@@ -67,13 +68,13 @@ Read `README.md` at the brain root if anything is unclear about where something 
 
 ## Step 1: Build the brand kit and harvest assets
 
-Run the `brand-kit` skill (`skills/brand-kit/SKILL.md`) with the URL and any assets the person provided. It writes `brand/brand-kit.md` and fills the `assets/` folders with every font, logo, product image, lifestyle image, and illustration that meets its quality bar.
+Run the `brand-kit` skill (`skills/brand-kit/SKILL.md`) with the URL and any assets the person provided. It writes `brand/brand-kit.md`, puts every font, logo and illustration that meets its quality bar into `brand/`, and every product and lifestyle image into `assets/`.
 
 Do not move on until the kit file exists. Note which asset categories it reported as complete and which have gaps — that feeds Step 2 and the final report.
 
 ## Step 2: Confirm app-generation is unblocked
 
-`app-generation` (`skills/app-generation/SKILL.md`) needs three things before it can build anything on-brand: the kit file, at least the display and body font files in `assets/fonts/`, and at least a primary logo in `assets/logos/`. Check all three exist. If they do, mark app-generation **ready** in the status report. If not, mark it **blocked** and name exactly which file is missing and where it would come from — do not build an app during setup, and do not substitute fonts or logos to force it through.
+`app-generation` (`skills/app-generation/SKILL.md`) needs three things before it can build anything on-brand: the kit file, at least the display and body font files in `brand/fonts/`, and at least a primary logo in `brand/logos/`. Check all three exist. If they do, mark app-generation **ready** in the status report. If not, mark it **blocked** and name exactly which file is missing and where it would come from — do not build an app during setup, and do not substitute fonts or logos to force it through.
 
 ## Step 3: Document the brand's own products and brand
 
