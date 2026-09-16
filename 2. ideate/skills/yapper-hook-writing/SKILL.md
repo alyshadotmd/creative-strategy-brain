@@ -19,7 +19,7 @@ description: >-
 | Reads | Where |
 |---|---|
 | Voice of customer — the words the hook is built from | `1. research/customer/reviews/` and the review audit |
-| Ad comments, post-purchase surveys, call transcripts | `1. research/customer/ad comments/`, `1. research/customer/` |
+| Post-purchase surveys, call transcripts | `1. research/customer/` |
 | Persona, awareness stage, trigger moment | `1. research/customer/personas/` |
 | The angle and the product truth under it | `2. ideate/messaging-angles/`, `brand/products/` |
 | What may and may not be said | `brand/claims.md` |

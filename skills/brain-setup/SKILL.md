@@ -1,6 +1,6 @@
 ---
 name: brain-setup
-description: Onboards a new brand into the brain, with the LLM doing the work. Use this the first time a brand is set up in a brain, or when a person says "set up the brain", "onboard this brand", "get the brain ready for [brand]", or the research folders are still empty. Runs the setup sequence in order — verify the folder structure, build the brand kit and assets, confirm app-generation is unblocked, document the brand's own products, collect every customer review, then identify at least three competitors and build a brand overview, product profiles, and review exports for each — and ends with a status report of what is filled and what is still missing. Minimum input is a website URL; everything else it asks for or finds.
+description: Onboards a new brand into the brain, with the LLM doing the work. Use this the first time a brand is set up in a brain, or when a person says "set up the brain", "onboard this brand", "get the brain ready for [brand]", or the research folders are still empty. Runs the setup sequence in order — verify the folder structure, build the brand kit and assets, confirm app-generation is unblocked, document the brand's own products, collect every customer review, then identify competitors and build a brand overview, product profiles, and review exports for each — and ends with a status report of what is filled and what is still missing. Minimum input is a website URL; everything else it asks for or finds.
 ---
 
 # Brain Setup
@@ -42,14 +42,13 @@ brand/
   logos/ · fonts/ · illustrations/   identity files, governed by the kit
 1. research/
   customer/
-    reviews/                  one <product-name>-reviews.csv per product (+ raw export)
-    ad comments/              exported ad comments, if any
+    reviews/                  one <product-name>-reviews.csv per product
     keyword-bank.md           queries for organic research, by intent and population
   competitors/
     <competitor-slug>/        one folder per competitor (rename the competitor-1/2/3 placeholders)
       brand/                  brand-overview.md
       product/                one <product-name>.md per product you pulled reviews for
-      customer/               one <product-name>-reviews.csv per product (+ raw export)
+      customer/               one <product-name>-reviews.csv per product
   creators/ · skills/
 2. ideate/  ·  3. create/
 4. analyze/
@@ -97,10 +96,10 @@ File names are the product's name, lowercased, hyphenated. If the brand has one 
 Otherwise work the intake paths in this order, stopping at the first that yields the full review set:
 
 1. **Platform integration.** If a review platform tool is connected in this environment (Judge.me, Okendo, Yotpo, Junip, Stamped, Loox, Shopify's native reviews, or another), use it to export all reviews for every product.
-2. **A file the person provides.** A CSV or spreadsheet export dropped into the chat. Read the whole file before doing anything with it. Save the raw file alongside the normalized one.
+2. **A file the person provides.** A CSV or spreadsheet export dropped into the chat. Read the whole file before doing anything with it.
 3. **Pull from the site.** Identify the review widget on a product page (the platform is usually visible in the page source or network requests). Most platforms expose a public, paginated endpoint that the widget itself calls — find it, page through it to the end, and collect every review for every product. If there is no endpoint, parse the rendered review section page by page. Record the platform and endpoint pattern in the brand overview so nobody has to rediscover it.
 
-**Normalize every source into the standard schema** — one CSV per product, named `<product-name>-reviews.csv`:
+**Make sure every review CSV carries the standard columns** — one CSV per product, named `<product-name>-reviews.csv`. Standardizing is additive, never subtractive: add or rename columns so the standard set below exists under these exact names (downstream skills key on them), and keep every extra column the source provides (age, skin type, location, helpful votes, anything else) after the standard ones. Never drop a column, and never drop rows:
 
 | Column | Content |
 |---|---|
@@ -116,23 +115,20 @@ Otherwise work the intake paths in this order, stopping at the first that yields
 | `source` | Platform or method (`judge.me`, `okendo`, `csv-upload`, `site-scrape`, …) |
 | `source_url` | The product or review page the review came from |
 
-Keep the raw export next to it as `<product-name>-reviews-raw.<ext>`. Never edit, filter, or "clean" review text — downstream skills need the customer's exact words, including the negative reviews.
+Nothing is dropped in normalization, so this one CSV per product is the only copy you need: no separate raw file. Never edit, filter, or "clean" review text — downstream skills need the customer's exact words, including the negative reviews.
 
 **Completeness check:** compare your row count to the review count the site displays for each product. If they don't match, page again or note the shortfall in the status report. A partial pull labeled as complete is worse than a gap.
 
-**Ad comments** (optional): if the person can export comments from their ads, save them to `1. research/customer/ad comments/` in the same schema where it fits (`body`, `date`, `source`, `source_url`; leave the rest empty).
 
 ## Step 5: Identify and document competitors
 
-**Minimum: three competitors.** More is fine if the person names them.
+**Identify.** If the person named competitors, use those. If not, research candidates: brands selling a comparable product to a comparable customer at a comparable price point, found through the brand's own category terms, marketplace "customers also bought" patterns, and search. Put a shortlist of five to seven in front of the person with one line each on why they qualify, and ask them to confirm, remove, or add. Do not proceed on unconfirmed guesses — a wrong competitor poisons the research folder.
 
-**Identify.** If the person named competitors, use those. If not, research candidates: brands selling a comparable product to a comparable customer at a comparable price point, found through the brand's own category terms, marketplace "customers also bought" patterns, and search. Put a shortlist of five to seven in front of the person with one line each on why they qualify, and ask them to confirm, remove, or add. Do not proceed past three unconfirmed guesses — a wrong competitor poisons the research folder.
-
-**For each confirmed competitor**, rename a placeholder folder (`competitor-1`, `-2`, `-3`) to the brand's slug — lowercase, hyphenated — and create more if there are more than three. Then fill it:
+**For each confirmed competitor**, rename a placeholder folder (`competitor-1`, `-2`, `-3`) to the brand's slug — lowercase, hyphenated — creating more if needed and deleting placeholders you don't use. Then fill it:
 
 1. **`brand/brand-overview.md`** — run the `brand-overview` skill in competitor mode. Who they are, full product range, the product(s) that compete directly with ours, their reviews platform and review base, paid-social posture if the tools to see it are connected, and where they sit relative to our brand.
 2. **`product/<product-name>.md`** — run the `product-info` skill for each product you are pulling reviews for. Same standard as Step 3. Profile the products that compete with ours, not the competitor's entire catalog; list the rest of their range in the brand overview.
-3. **`customer/<product-name>-reviews.csv`** — same intake paths and same schema as Step 4, pulled from the competitor's site. Same completeness check. Same raw file alongside.
+3. **`customer/<product-name>-reviews.csv`** — same intake paths and same schema as Step 4, pulled from the competitor's site. Same completeness check.
 
 Run competitors in parallel where you can — three sites' worth of fetching is the largest step.
 
@@ -148,9 +144,3 @@ End the run with one report, saved to the brain root as `SETUP-STATUS.md` and su
 - Anything you could not do and why (no public review endpoint, platform requires login, site blocked fetching, person still owes a file)
 
 Close with the next step: run `review-audit` (`1. research/skills/review-audit/SKILL.md`) on the brand's reviews — or on the competitors' if the brand has none — to produce the voice-of-customer the `persona-messaging-matrix` app and the `creative-engine` need.
-
----
-
-## Completeness
-
-There is no step budget and no session budget. The setup is done when every deliverable in Steps 0–6 exists in the brain, or is recorded as a gap with the reason it could not be obtained from the source. A large step is not a reason to sample it: many products, many competitors, or high review volume means the step takes longer, not that it gets trimmed. The status report names what is genuinely missing from the sources — never what was cut to reach an ending.

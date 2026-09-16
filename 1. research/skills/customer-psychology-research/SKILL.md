@@ -10,7 +10,6 @@ description: Research framework for understanding the psychological and situatio
 | Reads | Where |
 |---|---|
 | What customers actually said | `1. research/customer/reviews/` and the review audit |
-| Ad comments, where they exist | `1. research/customer/ad comments/` |
 | Organic conversation | pulled using `1. research/customer/keyword-bank.md` |
 | What the product is | `brand/products/` |
 
