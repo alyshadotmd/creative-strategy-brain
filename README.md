@@ -28,7 +28,7 @@ Each numbered folder represents one stage of the creative strategy flywheel. Sav
 | `assets` | The content library, flat (one brand). `images/product/`, `images/lifestyle/`, `footage/<shoot-or-creator>/` for raw clips, `ads/<ad-name>/` for finished cuts. An open pile that grows and gets drawn on per concept — it holds nothing that belongs to a single one, which is why footage and finished ads live here rather than in `pipeline/`. Brand identity files are not here; they are in `brand/`. |
 | `team` | One folder per person on the team. Each person stores context they need that is not relevant to the rest of the team. Example: `team/<name>/...` |
 | `integrations` | One folder per integration. Store context that helps the assistant navigate that specific integration (what its data means here, where to find what, how to read it). Example: `integrations/<app>/index.md` |
-| `strategy` | Business context: what matters to the business, current business objectives, and priorities right now. |
+| `focus.md` | Not a folder — a single file at the brain root. What the work is pointed at right now: the objective, why now, the constraint, what is deliberately **not** being done, and how we'll know. Read it before opening a concept; check a concept against it before briefing. Positioning and audience live in `brand/` and `1. research/` — this is narrower and more perishable. |
 
 ## Where skills go
 

@@ -62,7 +62,8 @@ assets/
   images/product/ · images/lifestyle/
   footage/<shoot-or-creator>/ raw clips, reusable across concepts
   ads/<ad-name>/              finished cuts, reusable as source
-skills/ · integrations/ · strategy/ · team/
+skills/ · integrations/ · team/
+focus.md                      what the work is pointed at right now
 ```
 
 Read `README.md` at the brain root if anything is unclear about where something belongs.
