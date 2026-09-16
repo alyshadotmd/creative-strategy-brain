@@ -54,6 +54,7 @@ To save a skill:
 | `app-generation` | `skills/app-generation/SKILL.md` | Cross-stage — builds on-brand apps, reports, dashboards from the kit |
 | `product-info` | `1. research/skills/product-info/SKILL.md` | Research — facts-only profile per product (own brand or competitor) |
 | `brand-overview` | `1. research/skills/brand-overview/SKILL.md` | Research — brand overview (own brand or competitor) |
+| `brand-relevant-keywords` | `1. research/skills/brand-relevant-keywords/SKILL.md` | Research — the query bank for finding organic conversation |
 | `review-audit` | `1. research/skills/review-audit/SKILL.md` | Research — mines reviews for pains, desires, triggers, personas, language |
 | `persona-messaging-matrix` | `1. research/skills/persona-messaging-matrix/SKILL.md` | Research — builds the branded persona & messaging matrix app from reviews (own or competitor); writes personas to `customer/personas/` |
 | `creative-engine` | `2. ideate/skills/creative-engine/SKILL.md` | Ideate — the creative strategy engine: pain/desire → persona → stage → trigger moment → angle → offer → format → hook |

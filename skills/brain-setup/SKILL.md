@@ -44,6 +44,7 @@ brand/
   customer/
     reviews/                  one <product-name>-reviews.csv per product (+ raw export)
     ad comments/              exported ad comments, if any
+    keyword-bank.md           queries for organic research, by intent and population
   competitors/
     <competitor-slug>/        one folder per competitor (rename the competitor-1/2/3 placeholders)
       brand/                  brand-overview.md
