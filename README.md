@@ -15,7 +15,7 @@ Each numbered folder represents one stage of the creative strategy flywheel. Sav
 | Folder | What goes here |
 |---|---|
 | `1. research` | What was discovered about the market — never what the brand asserts about itself, which lives in `brand/`. `customer/reviews/` and `customer/ad comments/` hold the voice of customer, `customer/personas/` the personas the engine reads, `competitors/<slug>/` one folder per competitor with a `brand/`, `product/`, `customer/` shape, plus `creators/`. |
-| `2. ideate` | Anything about generating new ad ideas and turning them into briefs. The creative strategy engine lives here with the libraries it draws on — `visual-formats/`, `messaging-angles/`, `hooks/` (each has a README saying what goes in it) — The concept register lives in `pipeline/concepts.md`, not here — a log with one row per concept is instance data. |
+| `2. ideate` | Anything about generating new ad ideas and turning them into briefs. The creative strategy engine lives here with the libraries it draws on — `visual-formats/`, `messaging-angles/`, `hooks/` (with its tactic library and opener swipe file) — The concept register lives in `pipeline/concepts.md`, not here — a log with one row per concept is instance data. |
 | `3. create` | The method for producing, checking and shipping creative — not the creative itself. Script-writing, briefing, QA and naming skills, plus the reference material they read: `voice/`, brief templates, QA standards, compliance/claims checks, naming conventions, handoff checklists. The ads themselves live in `pipeline/`. |
 | `4. analyze` | Post-launch performance analysis. The `creative-analysis` skill, reporting frameworks, and what-worked/what-didn't learnings across ads. `teardowns/<ad-name>.md` holds one teardown per launched ad — keyed to the ad name rather than the concept, because one concept can ship many ads. |
 
@@ -55,6 +55,12 @@ To save a skill:
 | `product-info` | `1. research/skills/product-info/SKILL.md` | Research — facts-only profile per product (own brand or competitor) |
 | `brand-overview` | `1. research/skills/brand-overview/SKILL.md` | Research — brand overview (own brand or competitor) |
 | `brand-relevant-keywords` | `1. research/skills/brand-relevant-keywords/SKILL.md` | Research — the query bank for finding organic conversation |
+| `customer-psychology-research` | `1. research/skills/customer-psychology-research/SKILL.md` | Research — the state a persona is in, and the moments the pain surfaces |
+| `creative-engine` | `2. ideate/skills/creative-engine/SKILL.md` | Ideate — product and customer in, ad concepts out |
+| `creative-mechanics` | `2. ideate/skills/creative-mechanics/SKILL.md` | Ideate — the structural move between an angle and a format |
+| `yapper-hook-writing` | `2. ideate/skills/yapper-hook-writing/SKILL.md` | Ideate — three-part hook systems for talking-head video |
+| `voice-copy-standards` | `3. create/skills/voice-copy-standards/SKILL.md` | Create — how copy sounds, applied to every skill that writes words |
+| `creative-analysis` | `4. analyze/skills/creative-analysis/SKILL.md` | Analyze — diagnose why an ad is or isn't working |
 | `review-audit` | `1. research/skills/review-audit/SKILL.md` | Research — mines reviews for pains, desires, triggers, personas, language |
 | `persona-messaging-matrix` | `1. research/skills/persona-messaging-matrix/SKILL.md` | Research — builds the branded persona & messaging matrix app from reviews (own or competitor); writes personas to `customer/personas/` |
 | `creative-engine` | `2. ideate/skills/creative-engine/SKILL.md` | Ideate — the creative strategy engine: pain/desire → persona → stage → trigger moment → angle → offer → format → hook |
