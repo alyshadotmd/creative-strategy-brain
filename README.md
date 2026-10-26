@@ -60,6 +60,7 @@ To save a skill:
 | `creative-mechanics` | `2. ideate/skills/creative-mechanics/SKILL.md` | Ideate — the structural move between an angle and a format |
 | `voice-copy-standards` | `3. create/skills/voice-copy-standards/SKILL.md` | Create — how copy sounds, applied to every skill that writes words |
 | `creative-analysis` | `4. analyze/skills/creative-analysis/SKILL.md` | Analyze — diagnose why an ad is or isn't working |
+| `direct-response-reps` | `4. analyze/skills/direct-response-reps/SKILL.md` | Analyze — daily practice: teaches what you noticed in any ad, the direct response principles behind it, and what you missed |
 | `review-audit` | `1. research/skills/review-audit/SKILL.md` | Research — mines positive reviews for pains, desires, failed solutions, objections, purchase triggers, transformations, daily-life moments, language |
 | `persona-finder` | `1. research/skills/persona-finder/SKILL.md` | Research — finds every persona the reviews show, largest first, with roles, variations, overlaps, and trigger moments; writes personas to `customer/personas/` |
 | `persona-messaging-matrix` | `1. research/skills/persona-messaging-matrix/SKILL.md` | Research — builds the branded persona & messaging matrix app from reviews (own or competitor); writes personas to `customer/personas/` |
