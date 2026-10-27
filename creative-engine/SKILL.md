@@ -19,12 +19,12 @@ This skill is brand-agnostic by design. It describes the shape of each step, not
 ## The map
 
 ```
-INPUTS  (from research: review-audit, persona-finder)
-   product facts · VOC · brand context · competitors
+INPUTS
+   product facts · customer words · brand context · competitors
         │
 Step 1  ANCHOR on a pain or desire
         │  research surfaces it, product validates it
-Step 2  PERSONA                                   → persona-finder
+Step 2  PERSONA
         │  group the anchor by life context
 Step 3  AWARENESS STAGE
         │  where the persona is when the ad finds them
@@ -34,9 +34,9 @@ Step 5  MESSAGING ANGLE
         │  the strategy the ad uses to make its case
 Step 6  THE OFFER
         │  everything above, synthesized into one statement in their words
-Step 7  VISUAL FORMAT                             → visual-formats library
+Step 7  VISUAL FORMAT
         │  the container that carries the offer
-Step 8  HOOK                                      → tactics.md · openers-swipe.md
+Step 8  HOOK
         │  the opening expression: text and visual
         ▼
 AD CONCEPT  → one row in the concept log
@@ -46,20 +46,18 @@ One really intentional ad. Or hundreds of ads that cover a full funnel, mapped s
 
 ## The inputs: product and customer
 
-Everything starts from two inputs, both produced by research:
+Everything starts from two inputs. Use whatever the person brings: a product page, reviews, survey answers, personas, notes, competitor ads.
 
 - **The product:** the facts. What it is, does, contains, costs, includes; its variations. And what may be claimed about it: if a claim isn't permitted, an ad can't make it. When the brand has a claims list, it decides.
-- **The customer:** tagged VOC from the `review-audit` (reviews), with source noted on every quote so you know which awareness stages a quote can honestly feed. Plus the personas from `persona-finder`, brand context, and competitor research as depth demands.
+- **The customer:** their own words, from reviews, comments, surveys or interviews, with the source noted on every quote so you know which awareness stages a quote can honestly feed. Plus any personas, brand context and competitor research the person has.
 
-The engine consumes research; it never redoes it.
+When an input is thin, say so and work with what's there. The more of the customer's real words you have, the sharper every step gets.
 
 ## Step 1: Anchor on a pain or desire
 
 Any product gets found in two ways: through a pain (a problem they have) or a desire (something they want). Choose one for this run. Research surfaces the candidates: the pains and desires that show up across the VOC in the customer's own words. The product validates the pick: can we credibly solve for it? One lane per run; if two pains keep pulling at you, that's two runs.
 
 ## Step 2: Find the persona
-
-**Pull from:** the `persona-finder` output. A persona you build here gets saved alongside those.
 
 Group the anchor by life context. A persona is a group of people who share the pain or desire AND a life context — their role, their routine, their responsibilities, the constraints they live inside, what they've tried, what they've accepted. Same pain, different lives means different personas: two people can share a symptom and nothing else about how it shows up, what they blame, or what they'd believe. The test: if two "personas" would get the same stories told to them, they're one persona.
 
@@ -92,8 +90,6 @@ Different trigger moments for the same persona and stage are different concepts.
 
 ## Step 5: Choose the messaging angle
 
-**Pull from:** the angles the brand has already run, if it keeps a list. Add every new one to that list.
-
 The angle is the strategy the ad uses to make its case — the specific reason this product, for this persona, in this moment. It's usually one product truth from the catalog, chosen because it answers what the trigger moment just made urgent: the thing they don't have time for, the thing they just tried that failed, the thing they're now afraid of, the thing they didn't know to want.
 
 The strategy is reusable; the angle is specific. The check: can this angle do this stage's job, and does it speak to this trigger moment, without contortion? If you're bending it to fit, change the angle or change the trigger.
@@ -112,17 +108,15 @@ Write it as one or two sentences. It sets up everything that follows: the format
 
 ## Step 7: Choose the visual format
 
-**Pull from:** a visual formats library. Alysha's is free at https://github.com/alyshadotmd/visual-formats.
-
-Format is the container for the offer. Match the container's purpose to the stage's job and to the trigger moment: formats that reveal for stages that reveal a problem, formats that prove for stages that prove superiority, formats that can stage a scene when the trigger moment is the ad. Any format can work at any stage when the messaging is right; the library's notes tell you where each one lives naturally. Executing one offer across multiple formats gives you more chances to connect: different people stop for different things.
+Format is the container for the offer. Match the container's purpose to the stage's job and to the trigger moment: formats that reveal for stages that reveal a problem, formats that prove for stages that prove superiority, formats that can stage a scene when the trigger moment is the ad. Any format can work at any stage when the messaging is right; some just live more naturally at one stage than another. Executing one offer across multiple formats gives you more chances to connect: different people stop for different things.
 
 ## Step 8: Write the hook
 
-**Pull from:** `tactics.md` (the hook tactics) and `openers-swipe.md` (opener patterns), both in this skill's folder.
+The hook is the opening expression of the offer, at this stage, in this format. Text and visual together: the words that stop the scroll and the frames that earn the next second. When the trigger moment is strong, the hook usually lives inside it — the first second of the ad is the first second of the moment.
 
-The hook is the opening expression of the offer, at this stage, in this format. Text and visual together: the words that stop the scroll and the frames that earn the next second. When the trigger moment is strong, the hook usually lives inside it — the first second of the ad is the first second of the moment. The swipe collections are there to draw from.
+Pick the hook's tactic for the stage: a callout, relatable moment, confession or question to make a problem exist; a bold claim, contrast or myth-bust to position the category; social proof, a statistic or a risk reversal to win the comparison; an offer, urgency or a direct call to action to close. Write several, in the customer's words, and keep the one that would make this persona stop on this day.
 
-**Pain or desire + persona + stage + trigger moment + angle + offer + format + hook: that's a full ad concept.** Log it as one row in the concept log (`concepts.md`, saved with the brand's work). It is then ready for the create skills: `short-form-scriptwriting` for the script, `voice-copy-standards` for every word.
+**Pain or desire + persona + stage + trigger moment + angle + offer + format + hook: that's a full ad concept.** Log it as one row in a concept log so every concept stays visible. It is then ready to script and brief.
 
 ## Entering in the middle
 
@@ -131,7 +125,7 @@ Usually you enter at the top. Sometimes you arrive mid-map with a component alre
 - **A trigger moment you noticed:** Step 4 arrived early — often from a customer story or your own observation. Name the persona it belongs to and the stage transition it drives, then walk forward. Add a note to the research so it catches up to what you noticed.
 - **A visual format you want to try:** Step 7 is answered. Work backwards: which stage does this container naturally serve, which trigger moment could it stage, and which persona and angle give it something worth saying? A format without an offer is an empty container.
 - **A messaging angle you want to try:** Step 5 is answered. Check it against a real persona, find the trigger moment it answers, write the offer, then find the stage where the angle works without contortion.
-- **A persona your research didn't surface:** Step 2 arrived early. Go deep enough to find its trigger moments, then walk forward normally. Save it alongside the `persona-finder` personas.
+- **A persona your research didn't surface:** Step 2 arrived early. Go deep enough to find its trigger moments, then walk forward normally. Add it to the brand's personas.
 - **A hook you think is smart:** Step 8 arrived first, which is backwards, and that's fine. A hook implies an angle, usually a stage, and often a trigger moment; name them explicitly. If you can't say who it's for, what moment it meets, and what it's doing, it's a clever line, not an ad concept yet. Save it to your hook list either way.
 
 ## One ad or many
@@ -142,4 +136,4 @@ When the goal is volume ("cover the funnel for this persona," "ten concepts for 
 
 ## The loop
 
-The engine is stage 2 of the flywheel: research (`review-audit`, `persona-finder`, `brand-relevant-keywords`) produces its inputs, create (`short-form-scriptwriting`, `voice-copy-standards`) receives its concepts, and analyze (`creative-analysis`, `direct-response-reps`) feeds learnings back. A trigger moment that keeps converting gets written back into the persona; an angle that keeps winning gets its entry expanded; a format that keeps dying at a stage gets its notes corrected; a hook that gets quoted back goes in the swipe file. A library that never grows means you stopped looking.
+The engine sits in the middle of the flywheel: research produces its inputs, creation receives its concepts, and analysis feeds what worked back in. A trigger moment that keeps converting gets written back into the persona; an angle that keeps winning gets used in more places; a format that keeps dying at a stage stops being used there; a hook that gets quoted back gets saved for next time. If nothing ever changes, you stopped looking.

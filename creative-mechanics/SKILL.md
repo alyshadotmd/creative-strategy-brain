@@ -27,7 +27,7 @@ Messaging Angle (Creative Strategy Engine)
     ↓
 Creative Mechanic ← YOU ARE HERE
     ↓
-Hook (creative-engine Step 8 + tactics.md)
+Hook (creative-engine Step 8)
     ↓
 Visual Format
 ```
