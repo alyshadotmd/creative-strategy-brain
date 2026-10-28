@@ -194,10 +194,10 @@ Before delivering any copy, verify:
 ## Examples
 
 ### Before (AI-generated default)
-*"The biggest shift for me was being able to view my creative by performance metrics, which allowed me to leverage data-driven insights to transform our overall advertising approach."*
+*"The biggest shift for me was being able to optimize my sleep routine, which allowed me to leverage data-driven insights to transform my overall energy levels."*
 
 ### After (human voice)
-*"The biggest shift for me was finally being able to see — like actually see — which of my creatives were working. And then do more of that."*
+*"The biggest shift for me was finally sleeping through the night. Like, actually sleeping. And waking up rested."*
 
 ---
 
@@ -210,7 +210,7 @@ Before delivering any copy, verify:
 ---
 
 ### Before (LinkedIn post)
-*"We are excited to share that our innovative approach to creative analytics is transforming the way brands navigate the complex landscape of paid social advertising."*
+*"We are excited to share that our innovative approach to clean skincare is transforming the way people navigate the complex landscape of daily self-care."*
 
 ### After (LinkedIn post)
-*"Most brands have no idea why their best ad worked. That's the actual problem we're solving."*
+*"Most people have no idea what's actually in their moisturizer. That's the problem we're fixing."*

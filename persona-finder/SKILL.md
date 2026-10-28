@@ -67,7 +67,7 @@ Set aside a review only when it has no positive story, when it is all about a ba
 
 **Mixed reviews keep their positive half.** When a review tells a positive story and also complains about the product ("Fixed my dizziness, but the taste is so bad I'm not sure I'll reorder"), it stays in the analysis set and its customer record holds only the positive story. Small gripes work the same way ("wish the bottle were bigger"). Count mixed reviews separately in the output header, so the negative review audit can also pick up their complaint.
 
-**Hard gate: 50 analyzed reviews.** Count the reviews left after both filters. The audit runs only when at least 50 remain. Under 50, tell the user the counts (received, discarded as low quality, set aside as negative, remaining), explain that the audit needs 50 positive, useful reviews to surface reliable patterns, and stop. Do not produce a partial audit.
+**Hard gate: 50 analyzed reviews.** Count the reviews left after both filters. The audit runs only when at least 50 remain. Under 50, tell the person the counts (received, discarded as low quality, set aside as negative, remaining), explain that the audit needs 50 positive, useful reviews to surface reliable patterns, and stop. Do not produce a partial audit.
 
 ---
 
@@ -95,7 +95,7 @@ For each review, fill in what it carries:
 
 Write the records to a file. Every number in the output (members, variations, roles, pains, overlaps, moments, shared pains) is counted from these records, one record at a time.
 
-Leave a field empty when the review doesn't say it. An empty field is a true record; a guessed one breaks the pairing this version exists to protect. Score 2 reviews usually fill only one or two fields; that's fine.
+Leave a field empty when the review doesn't say it. An empty field is a true record; a guessed one breaks the link between each persona and the real reviews behind it. Score 2 reviews usually fill only one or two fields; that's fine.
 
 ---
 

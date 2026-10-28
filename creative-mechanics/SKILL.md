@@ -165,7 +165,7 @@ The visual format is **the production structure that delivers it.**
 **Example:**
 - Clean energy drink
 - *"That jittery crash feeling... ingredients you can't pronounce... wondering what you just put in your body"*
-- Every Red Bull drinker knows exactly who this is about
+- Every regular energy drink buyer knows exactly which brand this is about
 - Product presented as the obvious alternative
 
 ---
@@ -231,9 +231,9 @@ The visual format is **the production structure that delivers it.**
 - No explanation of why they belong together — the viewer feels it
 
 **Examples:**
-- *"Saturdays and a Buoy in your water bottle"* — the day itself carries the vibe, the product rides it
-- *"Morning light and a quiet apartment and Loop Earplugs"* — product becomes part of a coveted aesthetic moment
-- *"A good book, an iced coffee, and a flight with Loop Earplugs"* — product slotted naturally into a fantasy travel scenario
+- *"Saturdays and a hydration packet in your water bottle"* — the day itself carries the vibe, the product rides it
+- *"Morning light, a quiet apartment and a good pair of earplugs"* — product becomes part of a coveted aesthetic moment
+- *"A good book, an iced coffee and a flight with earplugs in"* — product slotted naturally into a fantasy travel scenario
 
 **Format note:** Works especially well as a visual list or slow lifestyle montage where each element gets a beat. The rhythm of the "and a" structure is part of what makes it feel native to TikTok.
 
